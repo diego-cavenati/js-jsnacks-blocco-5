@@ -8,17 +8,12 @@
 const brands = ["Nike", "Adidas", "Gucci", "Lacoste", "Zara", "Diesel", "Pull & Bear",]
 
 function positionIncluded(main, min, max) {
-    
-    let included = [];
 
-    if (max > main.lenght) {
-        max = main.lenght;    
+    if (max > main.length) {
+        max = main.length;    
     }
 
-    included.push(main.slice(min, max))
-
-    return included
-
+    return main.slice(min, max)
 }
 
 console.log(positionIncluded(brands, 3, 9));
