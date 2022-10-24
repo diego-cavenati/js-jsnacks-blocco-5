@@ -9,7 +9,7 @@ const number = [1, 2, 3];
 function mixArray(firstArray, secondArray) {
     let mixAllArray = [];
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < firstArray.length; i++) {
         const singleFirstArray = firstArray.shift();
         mixAllArray.push(singleFirstArray);
         const singleSecondArray = secondArray.shift();
